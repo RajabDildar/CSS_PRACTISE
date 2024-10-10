@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #757070;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 20px;
+}
+
+.btn1 {
+  border: 2px solid blue;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.btn1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  z-index: -1;
+  transform: scaleX(10%);
+  transition: all 0.25s ease-in 0s;
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+.btn1:hover {
+  color: white;
+  border-color: white;
+}
+
+.btn1:hover::before {
+  min-width: 100%;
+  transform: scaleX(100%);
+}
+
+.btn2 {
+  border: 2px solid blue;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  background-color: red;
+  z-index: -1;
+  transition: all 0.25s ease-in 0s;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 90%;
+  height: 100%;
+  width: 10%;
+  background-color: red;
+  z-index: -1;
+  transition: all 0.25s ease-in 0s;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn2:hover {
+  color: white;
+  border-color: white;
+}
+
+.btn2:hover::before {
+  width: 50%;
+}
+
+.btn2:hover::after {
+  width: 50%;
+  left: 50%;
+}
+
+.btn3 {
+  border: 2px solid white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s ease-in 0s;
+}
+
+.btn3:hover {
+  color: blue;
+  border-color: blue;
+}
+
+.btn3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+  z-index: -1;
+  transition: all 0.35s ease-in 0s;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+  z-index: -1;
+  transition: all 0.35s ease-in 0s;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn3:hover::before {
+  width: 0%;
+}
+
+.btn3:hover::after {
+  width: 0%;
+  left: 100%;
+}
+
+.btn4 {
+  border: 2px solid white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.25s ease-in 0s;
+  overflow: hidden;
+}
+
+.btn4:hover {
+  color: green;
+  border-color: green;
+}
+
+.btn4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-color: green;
+  z-index: -1;
+  transition: all 0.25s ease-in 0s;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-color: green;
+  z-index: -1;
+  transition: all 0.25s ease-in 0s;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.btn4:hover::before {
+  height: 0%;
+}
+
+.btn4:hover::after {
+  top: 100%;
+}
+
+.btn5 {
+  border: 2px solid red;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s ease-in 0s;
+  overflow: hidden;
+}
+
+.btn5:hover {
+  color: white;
+  border-color: white;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  z-index: -1;
+  transition: all 0.35s ease-in 0s;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: rotate(-110deg);
+  transform-origin: left bottom;
+}
+
+.btn5:hover::before {
+  transform: rotate(0deg);
+}
+
+.btn5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  z-index: -1;
+  transition: all 0.35s ease-in 0s;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transform: rotate(110deg);
+  transform-origin: right bottom;
+  left: 50%;
+  top: 50%;
+}
+
+.btn5:hover::after {
+  transform: rotate(0deg);
+  top: 0%;
+}
+
+.btn6 {
+  border: 2px solid blue;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s ease-in 0s;
+  /* overflow: hidden; */
+}
+
+.btn6:hover {
+  color: white;
+  border-color: white;
+}
+
+.btn6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.35s ease-in 0s;
+  transform: scale(0);
+}
+
+.btn6:hover::before {
+  transform: scale(1);
+}
+
+.image {
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  transition: all 0.25s ease-in 0s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.image::before {
+  content: "Article";
+  position: absolute;
+  top: -20%;
+  z-index: 1;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.25s ease-in 0s;
+}
+
+.image:hover::before {
+  top: 0%;
+}
+
+.image::after {
+  content: "lorem ipsum dolor sit amet consectetur adipisicing elit.";
+  position: absolute;
+  bottom: -40%;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: all 0.25s ease-in 0s;
+  text-align: center;
+}
+
+.image:hover::after {
+  bottom: 0%;
+}

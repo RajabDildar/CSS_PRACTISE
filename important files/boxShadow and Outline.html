@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- border box model ka hisa hota hai jab k outline box model ka hisa nahi hoti. -->
+    <style>
+      #box {
+        border: 2px solid black;
+        padding: 34px;
+        /* box-shadow: 5px 5px 15px 5px #888888; */
+        box-shadow: 5px 15px 5px #888888;
+        /* box-shadow: -9px 16px 5px 5px #3cb4d7; */
+      }
+
+      #box2 {
+        width: 400px;
+        border: 2px solid black;
+        outline: 4px solid green;
+        outline-offset: 12px;
+      }
+
+      #box3 {
+        border: 2px solid black;
+        outline: 4px solid rgb(0, 81, 128);
+        outline-offset: 87px;
+      }
+
+      #para {
+        text-shadow: 2px 2px 4px red;
+      }
+
+      #para2 {
+        text-shadow: 8px 7px 4px #cb0b2ffc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">I'm a box.</div>
+    <br /><br /><br /><br />
+    <div id="box2">I'm box 2.</div>
+    <br /><br /><br /><br />
+    <div id="box3">I'm box 3.</div>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero,
+      soluta delectus voluptatum quasi provident quas asperiores facere
+      accusantium veritatis explicabo voluptatem possimus doloribus iusto,
+      ducimus quidem nisi autem! Mollitia. Illo nisi quasi fugiat porro
+      voluptatum vitae necessitatibus dignissimos facilis, similique tempore
+      commodi, voluptatem ducimus totam ut deserunt voluptas quisquam ipsam
+      minima? Quae fugit dolorem, deleniti laudantium aut cum eius.
+    </p>
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+      rerum perferendis quod distinctio error assumenda officiis eligendi, quas,
+      neque a eum blanditiis porro? Quidem vitae, sunt quae nesciunt possimus
+      itaque? Sint nisi itaque maxime, sit nemo saepe explicabo tempore sequi,
+      nam ex voluptas necessitatibus at? Aut quia iure ut vel maxime quidem,
+      voluptate sapiente, sed, atque voluptatem reprehenderit alias praesentium?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lists (before and after pseudo-elements)</title>
+    <style>
+      .container {
+        counter-reset: ordered-list;
+        background-color: gray;
+      }
+
+      ol {
+        list-style-type: none;
+      }
+
+      ol li::before {
+        counter-increment: ordered-list;
+        content: "List item: " counter(ordered-list) " ) ";
+        background-color: pink;
+        margin-right: 25px;
+      }
+
+      ul {
+        list-style-type: none;
+        counter-reset: unordered-list;
+      }
+
+      ul li::before {
+        counter-increment: unordered-list;
+        content: "ul list no. : " counter(unordered-list) " ";
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      </ol>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      </ol>
+    </div>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+    </ul>
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </body>
+</html>

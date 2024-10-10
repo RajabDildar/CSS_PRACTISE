@@ -1,0 +1,222 @@
+button {
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid white;
+  position: relative;
+  top: 40px;
+  left: 450px;
+  transition: all 0.1s ease-in 0s;
+  transform: scale(1.2);
+}
+
+button:hover {
+  transform: scale(1.4);
+  background-color: blue;
+}
+
+#one {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(43, 168, 226);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  transform: rotate(90deg);
+  /* rotate: x 90deg; */
+  /* rotate: y 90deg; */
+  /* rotate: z 90deg; */
+}
+
+#two {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 500px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#two:hover {
+  transform: rotate(90deg);
+}
+
+#three {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 900px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#three:hover {
+  transform: scale(2);
+  /* transform: scale(2 , 2); */
+  /* transform: scaley(2); */
+}
+
+#four {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 1300px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#four:hover {
+  transform: scaley(2);
+}
+
+#five {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 1700px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#five:hover {
+  transform: scalex(2);
+}
+
+#six {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(226, 43, 226);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 2100px;
+  left: 400px;
+  transition: all 4s ease-in 0s;
+}
+
+#six:hover {
+  transform: rotate(360deg);
+}
+
+#seven {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(43, 226, 67);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 2500px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#seven:hover {
+  transform: translateX(200px);
+}
+
+#eight {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(58, 178, 194);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 2900px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#eight:hover {
+  transform: translateX(-200px);
+}
+
+#nine {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(59, 27, 197);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 3300px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#nine:hover {
+  transform: translateY(-200px);
+}
+
+#ten {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 3700px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#ten:hover {
+  transform: translateY(200px);
+}
+
+#eleven {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(20, 113, 220);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 4100px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#eleven:hover {
+  transform: translate(200px, 200px);
+}
+
+#twelve {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(20, 220, 177);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 4500px;
+  left: 400px;
+  transition: all 1s ease-in 0s;
+}
+
+#twelve:hover {
+  transform: skew(40deg);
+  /* you can add + or - value.  skew(40deg); or skew(-40deg); */
+}
+
+#fornothing {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(220, 100, 20);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 4900px;
+  left: 400px;
+}

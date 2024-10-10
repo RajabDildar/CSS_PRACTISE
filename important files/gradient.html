@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradient</title>
+    <style>
+      body {
+        background-color: rgb(153, 147, 147);
+      }
+
+      div {
+        height: 200px;
+        border: 2px solid black;
+        padding: 50px;
+        margin: 50px;
+        /* background: linear-gradient(red,green); */
+        /* background: linear-gradient(to right,red,green); */
+        /* background: linear-gradient(to left,red,green); */
+        /* background: linear-gradient(to top,red,green); */
+        /* background: linear-gradient(to right,red,green);*/
+      }
+
+      .box1 {
+        /* background: linear-gradient(red,green,yellow); */
+        /* background: linear-gradient(red 10%,green ,yellow ); */
+        /* background: linear-gradient(rgba(245, 0, 0, 0.048) ,green ,yellow ); */
+        /* background: linear-gradient(black, rgba(0, 0, 0, 0.555), black); */
+        background: linear-gradient(45deg, black, #0000004f, black);
+      }
+
+      /* radial gradient  */
+
+      .box2 {
+        background: radial-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.877));
+        /* background: radial-gradient(circle,red 10%,yellow); */
+        /* background: radial-gradient(closest-side at 50% 50%,red,green ); */
+        /* background: radial-gradient(farthest-side at 50% 50%,red,green ); */
+        /* background: radial-gradient(closest-corner at 50% 50%,red,green ); */
+        /* background: radial-gradient(farthest-corner at 50% 50%,red,green ); */
+      }
+
+      .box3 {
+        /* background: repeating-radial-gradient(red 20px,blue 20px,red 30px ,blue 30px); */
+        /* background: repeating-linear-gradient(red 20%,blue 20% ,red 50%,blue 50%); */
+        /* background: repeating-linear-gradient(to top left,red 20%,blue 20% ,red 50%,blue 50%); */
+        /* background: repeating-linear-gradient(to top right,red 20%,blue 20% ,red 50%,blue 50%); */
+        background: repeating-linear-gradient(
+          60deg,
+          red 20%,
+          blue 20%,
+          red 30%,
+          blue 30%
+        );
+      }
+
+      .box4 {
+        width: 50%;
+        background: repeating-radial-gradient(black 20%, grey, black 40%);
+        /* background: repeating-radial-gradient(blue 20%,red ,blue 40%); */
+        /* background: repeating-radial-gradient(red 20%,blue ,red 30%); */
+      }
+
+      .box5 {
+        width: 50%;
+        background: repeating-linear-gradient(
+          to top right,
+          red 20%,
+          blue 20%,
+          red 30%,
+          blue 30%
+        );
+      }
+
+      .box6 {
+        background: repeating-linear-gradient(
+          red 0% 10%,
+          blue 10% 20%,
+          cyan 20% 30%
+        );
+      }
+
+      .box7 {
+        background: repeating-linear-gradient(
+          to right,
+          red 0% 10%,
+          blue 10% 20%,
+          cyan 20% 30%
+        );
+      }
+
+      .box8 {
+        background: repeating-linear-gradient(
+          to top right,
+          red 0% 10%,
+          blue 10% 20%,
+          cyan 20% 30%
+        );
+      }
+
+      .box9 {
+        background: repeating-radial-gradient(
+          red 0% 10%,
+          blue 10% 20%,
+          cyan 20% 30%
+        );
+      }
+
+      .box10 {
+        background: repeating-radial-gradient(
+          circle at top left,
+          red 0% 10%,
+          blue 10% 20%,
+          cyan 20% 30%
+        );
+      }
+
+      .box11 {
+        background: radial-gradient(#00000000, rgb(0, 0, 0));
+      }
+
+      .box12 {
+        background: conic-gradient(red, blue, cyan, violet, indigo, green);
+      }
+
+      .box13 {
+        background: linear-gradient(to right, red, rgba(255, 0, 0, 0.3));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box4">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box5">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box6">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box7">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box8">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box9">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box10">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box11">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box12">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+
+    <div class="box13">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit explicabo
+      iusto dignissimos deleniti nam in consequuntur reprehenderit? Minus,
+      dignissimos cupiditate!
+    </div>
+  </body>
+</html>

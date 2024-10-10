@@ -1,0 +1,27 @@
+.main {
+  width: 80%;
+  margin: 20px;
+  margin-inline: auto;
+  border: 2px solid red;
+  container-type: inline-size;
+  /* container-type mei inline-size width ko follow krta hai, size height aur width dono ko aur normal default value hai is se koi faraq nahi prta  */
+  container-name: main-box;
+  /* container-name mei 1 se zyada names bhi de sakte hain  */
+
+  /* shorthand  */
+  /* container: main-box / inline-size; */
+}
+
+@container main-box (min-width:300px) and (max-width : 400px) {
+  .card h2 {
+    color: red;
+    font-size: 2rem;
+  }
+}
+
+/* @container main-box (300px< width <400px) {
+  .card h2 {
+    color: red;
+    font-size: 2rem;
+  }
+} */

@@ -1,0 +1,32 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #3ba357;
+}
+
+#navbar {
+  background-color: #0f1111;
+  border: 5px solid white;
+  height: 60px;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+#logo {
+  font-size: 25px;
+  color: #f08804;
+  margin-right: 170px;
+}
+
+button {
+  background-color: #f08804;
+}
+
+input {
+  color: black;
+}

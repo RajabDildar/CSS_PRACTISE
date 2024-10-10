@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(182, 173, 173);
+        height: 100vh;
+      }
+
+      .main {
+        background-color: #fff;
+        border: 2px solid red;
+        /* width: 50%;
+        max-width: 500px; */
+        width: min(500px, 50%);
+      }
+
+      .main {
+        /* min-width: 50%;
+        width: 500px; */
+        width: max(50%, 500px);
+      }
+
+      .main {
+        /* width: 50%;
+        max-width: 70%;
+        min-width: 500px; */
+        width: clamp(30%, 500px, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+        magni, accusamus fugit et velit fuga ullam dolores fugiat, sint aliquid,
+        culpa ut. Harum iusto nostrum quia quisquam delectus nesciunt id
+        ducimus! Ipsa deleniti necessitatibus, minima modi dignissimos
+        recusandae exercitationem aut odit tempora delectus in voluptate placeat
+        laboriosam labore numquam a sequi culpa possimus impedit? Similique
+        maiores maxime ex nulla veritatis doloremque tempora vel illum ducimus
+        modi.
+      </p>
+    </div>
+  </body>
+</html>

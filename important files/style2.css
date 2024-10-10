@@ -1,0 +1,97 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.text-check {
+  background-color: rgb(219, 196, 196);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-check h2 {
+  color: red;
+  writing-mode: vertical-lr;
+}
+
+.wrapper1 {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  background-color: gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x proximity; */
+}
+
+.wrapper1 div {
+  min-height: 10rem;
+  min-width: 10rem;
+  scroll-snap-align: center;
+}
+
+.wrapper1 div:nth-child(1) {
+  background-color: red;
+}
+
+.wrapper1 div:nth-child(2) {
+  background-color: blue;
+}
+
+.wrapper1 div:nth-child(3) {
+  background-color: green;
+}
+
+.wrapper1 div:nth-child(4) {
+  background-color: yellow;
+}
+
+.wrapper1 div:nth-child(5) {
+  background-color: purple;
+}
+
+.notcopy {
+  user-select: none;
+  pointer-events: none;
+  font-size: 3rem;
+  color: red;
+}
+
+#one {
+  text-decoration: overline !important;
+  /* yeh specificity ko define krta hai  */
+}
+
+#capital {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: pink;
+  /* text-decoration-thickness: 5px;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-decoration-style: wavy; */
+  text-decoration: 8px aqua wavy underline;
+}
+
+#outer {
+  font-size: 25px;
+  background-color: aqua;
+  width: 80vw;
+  margin: auto;
+  /* margin: auto; krne se left aur right se margin automatially set ho jae gi aur element centre mei chala jae ga.  */
+}
+
+#inner {
+  font-size: 10px;
+}
+
+#otherH {
+  text-indent: 70px;
+}

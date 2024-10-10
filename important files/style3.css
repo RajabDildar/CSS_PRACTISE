@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  /* background-color: #1f9c8f; */
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  background-color: red;
+  /* border: 2px solid black; */
+  /* border-radius: 5px 10px 15px 20px; */
+  border-radius: 0px 0px 0px 25px;
+  box-shadow: 10px 5px 5px red;
+  object-fit: cover;
+  /* border-bottom-left-radius: 25px;
+  border-top-right-radius: 30px; */
+}
+
+p {
+  letter-spacing: 5px;
+}
+
+#p1 {
+  cursor: pointer;
+}
+
+#p2 {
+  cursor: zoom-in;
+}

@@ -1,0 +1,64 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #3ba357;
+}
+
+#navbar {
+  background-color: #0f1111;
+  border: 5px solid white;
+  height: 60px;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+#logo {
+  font-size: 25px;
+  color: #f08804;
+  margin-right: 170px;
+}
+
+button {
+  background-color: #f08804;
+}
+
+input {
+  color: black;
+}
+
+.myclass {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+#id1 {
+  background-color: rgb(255, 0, 0, 0.5);
+}
+
+#id2 {
+  background-color: rgb(0, 0, 255, 0.5);
+}
+
+#id3 {
+  background-color: rgb(0, 255, 0, 0.5);
+}
+
+main {
+  height: 500px;
+}
+
+hr {
+  height: 10px;
+  background-color: aqua;
+}
+
+footer {
+  text-align: center;
+}

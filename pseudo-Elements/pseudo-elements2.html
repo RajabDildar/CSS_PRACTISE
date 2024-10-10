@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo elements (before and after pseudo-elements)</title>
+    <style>
+      body {
+        background-color: rgb(214, 207, 207);
+      }
+
+      .one::before {
+        content: open-quote;
+        font-size: 3em;
+        color: red;
+      }
+
+      .one::after {
+        content: close-quote;
+        font-size: 3em;
+        color: red;
+      }
+
+      a {
+        color: red;
+        font-size: 2em;
+        position: relative;
+      }
+
+      a:nth-child(2):before {
+        content: "click here to go to google.com";
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        font-size: 1rem;
+        background-color: grey;
+        color: white;
+        padding: 1em 3em;
+        border-top-right-radius: 1.5rem;
+        white-space: nowrap;
+        transform: scale(0);
+        /* transition: all 0.2s ease-in 0s; */
+      }
+
+      a:nth-child(2):hover::before {
+        transform: scale(1);
+        bottom: 90%;
+        left: 50%;
+      }
+
+      a:nth-child(5)::after {
+        content: url("https://img.icons8.com/?size=100&id=60664&format=png&color=000000");
+        /* color: red;
+        background-color: pink; */
+        /* width: 100px;
+        height: 100px; */
+      }
+
+      .wrapper {
+        counter-reset: heading-name;
+        outline: 2px solid black;
+        padding: 8em;
+      }
+
+      h2 {
+        color: red;
+        font-size: 2em;
+        position: relative;
+      }
+
+      h2::before {
+        counter-increment: heading-name;
+        content: counter(heading-name) "  ";
+        position: absolute;
+        left: -100px;
+        top: -0.5em;
+        width: 2em;
+        height: 2em;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid red;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt ex
+      quaerat voluptate sit cupiditate itaque laudantium enim nisi! Voluptas
+      atque quod eaque modi sed!
+    </p>
+    <a href="https://www.google.com">google</a><br /><br />
+    <a href="https://www.google.com">google </a>
+    <div class="wrapper">
+      <h2>this is a heading...</h2>
+      <p class="two">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+        obcaecati asperiores, iure ex libero reprehenderit temporibus ut modi
+        placeat pariatur ducimus cum aliquam culpa voluptatem?
+      </p>
+      <h2>this is a heading...</h2>
+      <p class="three">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        assumenda explicabo blanditiis iure? Iste sint sapiente cumque
+        doloremque? Doloribus sapiente harum magnam id veritatis assumenda?
+      </p>
+      <h2>this is a heading...</h2>
+      <p class="four">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        assumenda explicabo blanditiis iure? Iste sint sapiente cumque
+        doloremque? Doloribus sapiente harum magnam id veritatis assumenda?
+      </p>
+      <h2>this is a heading...</h2>
+      <p class="five">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        assumenda explicabo blanditiis iure? Iste sint sapiente cumque
+        doloremque? Doloribus sapiente harum magnam id veritatis assumenda?
+      </p>
+      <h2>this is a heading...</h2>
+      <p class="six">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        assumenda explicabo blanditiis iure? Iste sint sapiente cumque
+        doloremque? Doloribus sapiente harum magnam id veritatis assumenda?
+      </p>
+      <h2>this is a heading...</h2>
+      <p class="seven">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        assumenda explicabo blanditiis iure? Iste sint sapiente cumque
+        doloremque? Doloribus sapiente harum magnam id veritatis assumenda?
+      </p>
+    </div>
+  </body>
+</html>

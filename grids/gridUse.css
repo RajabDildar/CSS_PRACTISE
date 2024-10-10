@@ -1,0 +1,13 @@
+div {
+  background-color: pink;
+  outline: 2px solid black;
+  padding: 1em;
+}
+
+.container {
+  background-color: rgba(172, 255, 47, 0.575);
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

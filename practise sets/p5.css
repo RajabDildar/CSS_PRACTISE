@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  background-image: url(extras/car-photo.jpg);
+  background-size: cover;
+  border: 2px solid black;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}

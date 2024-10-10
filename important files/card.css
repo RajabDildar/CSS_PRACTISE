@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 221, 221);
+}
+
+.container {
+  position: absolute;
+  top: 30px;
+  left: 500px;
+  height: 90vh;
+  width: 27vw;
+  background-color: white;
+  box-sizing: none;
+  padding: 8px;
+}
+
+#img {
+  height: 50%;
+  width: 100%;
+  border-radius: 15px;
+  background-image: url("/extras/car-photo.jpg");
+  background-size: cover;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid rgb(226, 221, 221);
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+#btn1 {
+  position: relative;
+  top: 10px;
+}
+
+#btn2 {
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+#para1 {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: 20px;
+}
+
+#para2 {
+  position: relative;
+  top: 40px;
+}
+
+#btn3 {
+  font-size: large;
+  position: relative;
+  left: 30%;
+  top: 55px;
+  background-color: rgb(226, 221, 221);
+  color: rgb(7, 31, 252);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css variables se color border padding font-size mtlb koi bhi property set kr sakte hain */
+      :root {
+        --color: red;
+        --seccolor: rgb(233, 122, 122);
+        --height: 100px;
+        --width: 100px;
+        --defposition: absolute;
+        --positiontop: 300px;
+        --bordercolor: black;
+      }
+
+      /* global variable */
+
+      .main {
+        background-color: var(--color);
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+      }
+
+      #one {
+        --color: orange;
+        background-color: var(--color);
+      }
+
+      /* #one mein local variable use kia hai is liye background-color us variable k mutabik (orange) aya hai */
+
+      #two {
+        background-color: var(--othercolor, blue);
+      }
+
+      /* #two mei --othercolor name ka koi variable found nhi hoa is liye coma k bad wali value set ho gayi */
+
+      .para {
+        background-color: var(--seccolor);
+      }
+
+      .other {
+        height: var(--height);
+        width: var(--width);
+        background-color: var(--seccolor);
+        position: var(--defposition);
+        top: var(--positiontop);
+        border: 2px solid var(--bordercolor);
+      }
+
+      iframe {
+        position: absolute;
+        top: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul>
+        <li id="one">Home</li>
+        <li id="two">About</li>
+        <li id="three">Portfolio</li>
+      </ul>
+    </div>
+    <div class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+      laboriosam cum eligendi eum dignissimos ut veniam ducimus consectetur qui
+      id at, quaerat fugiat blanditiis autem sequi alias voluptas asperiores
+      dolorem ea voluptates porro natus harum. Architecto nesciunt corrupti
+      reiciendis alias excepturi animi ipsa veritatis cumque?
+    </div>
+
+    <div class="other">other div.</div>
+
+    <br /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ovRU9xHfly4?si=-BS92f9Ov7A4FcTx"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

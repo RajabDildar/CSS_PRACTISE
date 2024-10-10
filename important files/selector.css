@@ -1,0 +1,131 @@
+/* universal selector  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.boxes * {
+  background-color: orange;
+  color: aqua;
+}
+
+/* element selector  */
+div {
+  background-color: red;
+}
+
+/* class selector */
+.box {
+  color: blue;
+}
+
+/* id selector  */
+#box1 {
+  background-color: yellow;
+}
+
+/* child selector  */
+div > p {
+  background-color: orange;
+  color: blue;
+}
+
+/* child selector mei agar div k directly andar paragraph hai to us pr property apply ho gi. for example;
+<div>
+<p></p>
+</div>
+agar directly andar na ho to apply nhi ho gi. for example;
+<div>
+<article>
+    <p></p>
+</article>
+</div>  */
+
+/* descendant selector  */
+div p {
+  background-color: red;
+  color: white;
+}
+
+/* descendant selector mei div k andar paragraph tag directly ho ya indirectly property apply hogi.  */
+
+/* pseudo selector  */
+a:visited {
+  color: yellow;
+}
+
+/* anchor tag visit krne k bad text ka color yellow (mtlb change) ho jaega. */
+
+a:link {
+  color: yellowgreen;
+}
+
+a:active {
+  background-color: red;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+p:first-child {
+  background-color: green;
+}
+
+/* is pseudo selector se file mei jahan jahan koi paragraph kisi tag ka first-child ho ga wahan property apply ho jae gi  */
+
+p::first-line {
+  background-color: red;
+}
+
+p::first-letter {
+  background-color: blue;
+}
+
+/* Say you've got an email sign up form, and you want the email form field to have a red border if it contains an invalid email address. How do you do that? You can use an :invalid CSS pseudo-class, which is one of many browser-provided pseudo-classes. */
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.box:nth-child(even) {
+  background-color: green;
+}
+
+.box:nth-child(odd) {
+  background-color: rgb(159, 218, 159);
+}
+.box:last-child(2) {
+  background-color: rgb(48, 199, 226);
+}
+
+/* pseudo elemts */
+
+.box::after {
+  content: i am a good boy;
+}
+.box::before {
+  content: he is a good boy;
+}
+
+/* in ko css se dynamically content dalne k liye istemaal kia jata hai */
+
+::selection {
+  color: aqua;
+  background-color: black;
+}
+
+.box::first-letter {
+  color: peru;
+  background-color: red;
+}
+
+input::placeholder {
+  color: blue;
+}
+
+/* <iframe width="560" height="315" src="https://www.youtube.com/embed/L8NfSewTfxY?si=-CNNZlO7gmTsarT6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>*/

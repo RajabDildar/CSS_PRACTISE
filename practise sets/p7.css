@@ -1,0 +1,43 @@
+body {
+  height: 100px;
+  width: 100px;
+  /* background-color: aqua; */
+}
+
+@media (max-width: 300px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* this is another way to right media queries */
+
+/* @media (300px< width < 400px) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+@media (min-width: 300px) and (max-width: 400px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* @media (prefers-color-scheme:dark){
+  body{
+    background-color: black;
+  }
+} */
