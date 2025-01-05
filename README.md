@@ -1,4 +1,4 @@
 # CSS PRACTISE REPO
 
 <br>
-This is a CSS practise Repo used for revision
+while learning CSS,I practice code in this repository.
