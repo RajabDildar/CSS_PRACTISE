@@ -1,4 +1,4 @@
-# CSS PRACTISE REPO
+# CSS & BOOTSTRAP PRACTISE REPO
 
 <br>
-while learning CSS,I practice code in this repository.
+while learning CSS and BOOTSTRAP,I practice code in this repository.
