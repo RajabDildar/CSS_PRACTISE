@@ -1,0 +1,5 @@
+h2 {
+  color: var(--bs-yellow);
+  background-color: var(--bs-green);
+}
+/* bootstrap css do not work in media queries */
