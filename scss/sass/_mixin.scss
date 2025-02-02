@@ -1,0 +1,14 @@
+//mixin
+@mixin flexProp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//parameters in mixin
+@mixin txt-code($p1, $p2) {
+  font-size: 5rem + 5rem; //we can do operations with same type of units (i.e, rem + rem)
+  text-transform: $p1;
+  letter-spacing: $p2;
+}

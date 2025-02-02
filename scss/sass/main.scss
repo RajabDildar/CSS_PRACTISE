@@ -1,0 +1,44 @@
+//Sass is a css pre-processor in which we can use operators, variables, nesting ,mixin and include, parameters, partials
+//importing variables and mixins
+//here i am using live sass compiler extension
+@import "mixin";
+@import "var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+//partials => other files (file name must start with _underscore) to write mixins and variables
+
+.main_header {
+  @include flexProp;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-clr;
+
+  // using operators and nesting
+  h1 {
+    @include txt-code(capitalize, 3rem);
+    color: $txt-clr;
+
+    &:hover {
+      color: yellow;
+    }
+
+    &::after {
+      content: " :)";
+    }
+  }
+
+  p {
+    @include txt-code(capitalize, 1rem);
+    @extend h1; //extending h1 properties into p
+    font-weight: map-get($font-weights, medium);
+  }
+}
